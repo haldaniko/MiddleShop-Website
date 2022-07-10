@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Middle Price</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="/static/css/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="/static/css/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="/static/css/slick-theme.css"/>
+		<link type="text/css" rel="stylesheet" href="/static/css/nouislider.min.css"/>
+		<link rel="stylesheet" href="/static/css/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="/static/css/style.css"/>
+    </head>
+	<body>
+		<header>
+			<div id="top-header"js>
+				<div class="container">
+					<ul class="header-links pull-left">
+						<li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
+					</ul>
+					<ul class="header-links pull-right">
+						<li><a href="#"><i class="fa fa-user-o"></i> Мій акаунт</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="header-logo">
+								<a href="#" class="logo">
+									<img src="/static/img/logo.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="header-search">
+								<form>
+									<select class="input-select">
+										<option value="0">Усі категорії</option>
+										<option value="1">Відеокарти</option>
+										<option value="1">Процесори</option>
+									</select>
+									<input class="input" placeholder="Я шукаю">
+									<button class="search-btn">Search</button>
+								</form>
+							</div>
+						</div>
+						<div class="col-md-3 clearfix">
+							<div class="header-ctn">
+								<div>
+									<a href="#">
+										<i class="fa fa-heart-o"></i>
+										<span>Список бажань</span>
+										<div class="qty">2</div>
+									</a>
+								</div>
+								<div class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+										<i class="fa fa-shopping-cart"></i>
+										<span>Ваш кошик</span>
+										<div class="qty">3</div>
+									</a>
+									<div class="cart-dropdown">
+										<div class="cart-list">
+											<div class="product-widget">
+												<div class="product-img">
+													<img src="/static/img/product01.png" alt="">
+												</div>
+												<div class="product-body">
+													<h3 class="product-name"><a href="#">product name goes here</a></h3>
+													<h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
+												</div>
+												<button class="delete"><i class="fa fa-close"></i></button>
+											</div>
+
+											<div class="product-widget">
+												<div class="product-img">
+													<img src="/static/img/product02.png" alt="">
+												</div>
+												<div class="product-body">
+													<h3 class="product-name"><a href="#">product name goes here</a></h3>
+													<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
+												</div>
+												<button class="delete"><i class="fa fa-close"></i></button>
+											</div>
+										</div>
+										<div class="cart-summary">
+											<small>3 Item(s) selected</small>
+											<h5>SUBTOTAL: $2940.00</h5>
+										</div>
+										<div class="cart-btns">
+											<a href="#">View Cart</a>
+											<a href="#">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
+										</div>
+									</div>
+								</div>
+								<!-- /Cart -->
+
+								<!-- Menu Toogle -->
+								<div class="menu-toggle">
+									<a href="#">
+										<i class="fa fa-bars"></i>
+										<span>Menu</span>
+									</a>
+								</div>
+								<!-- /Menu Toogle -->
+							</div>
+						</div>
+						<!-- /ACCOUNT -->
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+			</div>
+		</header>
+		<nav id="navigation">
+			<div class="container">
+				<div id="responsive-nav">
+					<ul class="main-nav nav navbar-nav">
+						<li class="active"><a href="#">Головна</a></li>
+						<li><a href="#">Відеокарти</a></li>
+						<li><a href="#">Материнські плати</a></li>
+						<li><a href="#">Процесори</a></li>
+						<li><a href="#">Оперативна пам'ять</a></li>
+						<li><a href="#">Аксесуари</a></li>
+						<li><a href="#">Інше</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		{% block container %} {% endblock %}
+
+		<footer id="footer">
+			<div class="section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Про нас</h3>
+								<ul class="footer-links">
+									<li><a href="#"><i class="fa fa-map-marker"></i>Київська область, м. Буча</a></li>
+									<li><a href="#"><i class="fa fa-phone"></i>+38 (097) 29-64-484</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>haldaniko@gmail.com</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Категорії</h3>
+								<ul class="footer-links">
+									<li><a href="#">Відеокарти</a></li>
+									<li><a href="#">Материнські плати</a></li>
+									<li><a href="#">Процесори</a></li>
+									<li><a href="#">Оперативна пам'ять</a></li>
+									<li><a href="#">Аксесуари</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="clearfix visible-xs"></div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Інформаія</h3>
+								<ul class="footer-links">
+									<li><a href="#">Про нас</a></li>
+									<li><a href="#">Зворотній зв'язок</a></li>
+									<li><a href="#">Політика конфіденційності</a></li>
+									<li><a href="#">Замовлення і Повернення</a></li>
+									<li><a href="#">Правила і Умови</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Сервіс</h3>
+								<ul class="footer-links">
+									<li><a href="#">Мій акаунт</a></li>
+									<li><a href="#">Кошик</a></li>
+									<li><a href="#">Список бажань</a></li>
+									<li><a href="#">Допомога</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="/static/js/jquery.min.js"></script>
+		<script src="/static/js/bootstrap.min.js"></script>
+		<script src="/static/js/slick.min.js"></script>
+		<script src="/static/js/nouislider.min.js"></script>
+		<script src="/static/js/jquery.zoom.min.js"></script>
+		<script src="/static/js/main.js"></script>
+
+	</body>
+</html>
